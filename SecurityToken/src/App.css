@@ -567,3 +567,48 @@ h3 {
 .account-appearance-11 {
   background: var(--account-appearance-11);
 }
+
+.storybook-wrapper {
+  --color-radix-green-1: #00ab84;
+  --color-radix-green-2: #00c389;
+  --color-radix-green-3: #21ffbe;
+  --color-radix-blue-1: #060f8f;
+  --color-radix-blue-2: #052cc0;
+  --color-radix-blue-3: #20e4ff;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-accent-red: #ef4136;
+  --color-accent-blue: #00aeef;
+  --color-accent-yellow: #fff200;
+  --color-alert: #e59700;
+  --color-radix-error-red-1: #c82020;
+  --color-radix-error-red-2: #fcebeb;
+  --color-grey-1: #003057;
+  --color-grey-2: #8a8fa4;
+  --color-grey-3: #ced0d6;
+  --color-grey-4: #e2e5ed;
+  --color-grey-5: #f4f5f9;
+}
+
+.storybook-wrapper[data-mode="light"] {
+  --radix-popover-background: color-mix(in srgb, #efefef 50%, transparent);
+  --radix-popover-border-color: var(--color-grey-3);
+  --radix-popover-text-color: var(--color-grey-1);
+  --radix-popover-tabs-background: color-mix(in srgb, var(--color-grey-2) 15%, transparent);
+  --radix-popover-tabs-button-active-background: var(--color-light);
+  --radix-link-color: var(--color-radix-blue-2);
+  --radix-card-background: var(--color-light);
+  --radix-card-text-color: var(--color-grey-1);
+  --radix-card-text-dimmed-color: var(--color-grey-2);
+  --radix-card-inverted-background: var(--color-grey-1);
+  --radix-card-inverted-text-color: var(--color-light);
+  --radix-avatar-border-color: var(--color-grey-5);
+  --radix-mask-background: color-mix(in srgb, var(--color-light) 50%, transparent);
+  --radix-button-background: color-mix(in srgb, var(--color-light) 80%, transparent);
+  --radix-button-background-hover: var(--color-light);
+  --radix-button-background-pressed: var(--color-grey-5);
+  --radix-button-text-color: var(--color-radix-blue-2);
+  --radix-button-disabled-background: color-mix(in srgb, var(--color-light) 80%, transparent);
+  --radix-button-disabled-text-color: var(--color-grey-3);
+  color: var(--color-grey-1);
+}
