@@ -1,5 +1,5 @@
 export const componentAddress =
-  "component_tdx_2_1cz44jlxyv0wtu2cj7vrul0eh8jpcfv3ce6ptsnat5guwrdlhfpyydn";
+  "component_tdx_2_1cqqkylmdv62trzdk3lv6qhs04apnu2vtxn5q5h7v40czyr9rpxy8gp";
 
 // You can create a dApp definition in the dev console at https://stokenet-console.radixdlt.com/dapp-metadata
 // then use that account for your dAppDefinitionAddress
