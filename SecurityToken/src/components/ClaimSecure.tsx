@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSendTransaction } from "../hooks/useSendTransaction";
 import { componentAddress } from "../constants";
 
-export const ClaimHello = ({
+export const ClaimSecure = ({
   selectedAccount,
   enableButtons,
 }: {
@@ -43,11 +43,11 @@ export const ClaimHello = ({
 
   return (
     <button
-      id="get-hello-token"
+      id="get-secure-token"
       onClick={handleClaimToken}
       disabled={!selectedAccount || !enableButtons}
       className={loading ? "loading" : ""}>
-      Claim Hello Token
+      Claim Secure Token
     </button>
   );
 };

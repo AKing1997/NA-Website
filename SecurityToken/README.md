@@ -33,7 +33,7 @@ application.
 
 For styling purposes, `index.html` includes links to Google Fonts, allowing us
 to incorporate the `IBM Plex Sans` font family. Also, there's a reference to a
-favicon `hello-token-fav.svg`. The core of `index.html` is the `<div>` element
+favicon `secure-token-fav.svg`. The core of `index.html` is the `<div>` element
 with `id="root"` that acts as the mounting point for our entire React
 application. When React starts, it latches onto this div and renders the app's
 components within it. At the end of the body section, index.html includes a
@@ -125,7 +125,7 @@ export const RdtContext = createContext(null);
 
 This is the main component file for the application. It imports various
 components like DevModeInstruction, Navbar, DocumentationSection, and
-HelloTokenSection. These components are then rendered inside a div with the id
+SecureTokenSection. These components are then rendered inside a div with the id
 container, forming the primary structure of the app's user interface.
 
 ```javascript
@@ -134,7 +134,7 @@ function App() {
     <div id="container">
       <Navbar />
       <DevModeInstruction />
-      <HelloTokenSection />
+      <SecureTokenSection />
       <DocumentationSection />
     </div>
   );
@@ -155,12 +155,12 @@ developer image.
 Display useful information for the dApp, guide users through setting up
 development mode for their wallet.
 
-### `src/components/HelloTokenSection.tsx`
+### `src/components/SecureTokenSection.tsx`
 
 This component serves as the main interface for the token claim functionality.
 It uses the `useAccounts.ts` hook to fetch and display user accounts in a
 dropdown menu. Users can select an account from this dropdown. The component
-also includes a `ClaimHello.tsx` component, which is the actual button used to
+also includes a `ClaimSecure.tsx` component, which is the actual button used to
 claim the token. The dropdown's visibility is managed by local state, and a
 function is defined to handle account selection.
 
@@ -185,9 +185,9 @@ const subscription = rdt.walletApi.walletData$.subscribe((walletData) => {
 });
 ```
 
-#### `src/components/ClaimHello.tsx`
+#### `src/components/ClaimSecure.tsx`
 
-This component represents the button that users click to claim the "Hello
+This component represents the button that users click to claim the "Secure
 Token". It uses the `useSendTransaction.ts` hook to handle the actual
 transaction process. Upon clicking the button, it constructs a transaction
 manifest and sends it using the sendTransaction function. It also handles the
@@ -247,9 +247,9 @@ const sendTransaction = useCallback(
 );
 ```
 
-For more information about the hello-token you can find the scrypto project in
+For more information about the secure-token you can find the scrypto project in
 the Radix Official-Examples repository
-[here](https://github.com/radixdlt/official-examples/tree/main/getting-started/hello-token)
+[here](https://github.com/radixdlt/official-examples/tree/main/getting-started/secure-token)
 This project is a simple example of a Radix component that can be used to
 interact with the Radix Ledger. It is pre-deployed on the stokenet network and
 can be interacted with using the Radix dApp Toolkit. It contains a simple

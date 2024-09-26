@@ -3,11 +3,10 @@ const DevModeInstruction = () => {
     <>
       <section className="heading-section">
         <h1>
-          Dev Mode Setup <br />
-          in a Few Steps
+          NA Security Token 
         </h1>
         <p className="head-text">
-          Before connecting your wallet please follow the steps below.
+          This Security Token is based on ERC-3643 protocol but using Radix engine.
         </p>
       </section>
 
