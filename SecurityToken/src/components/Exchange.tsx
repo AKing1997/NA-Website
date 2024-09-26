@@ -3,7 +3,7 @@ import { useAccount } from "../AccountContext";
 import { ClaimSecure } from "./ClaimSecure";
 import { CustomSelect } from "./CustomSelect";
 
-const SecureTokenSection = () => {
+const Exchange = () => {
   const { accounts, selectedAccount } = useAccount();
   const [enableButtons, setEnableButtons] = useState(false);
   const [active, setActive] = useState(false);
@@ -62,4 +62,4 @@ const SecureTokenSection = () => {
   );
 };
 
-export default SecureTokenSection;
+export default Exchange;

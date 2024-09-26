@@ -12,7 +12,7 @@ import { dAppDefinitionAddress } from "./constants.js";
 const rdt = RadixDappToolkit({
   networkId: RadixNetwork.Stokenet,
   applicationVersion: "1.0.0",
-  applicationName: "NA Security Token",
+  applicationName: "Security Token",
   applicationDappDefinitionAddress: dAppDefinitionAddress,
 });
 console.log("dApp Toolkit: ", rdt);

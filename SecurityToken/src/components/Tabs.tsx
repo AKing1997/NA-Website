@@ -5,74 +5,46 @@ import {
   TabsContent,
 } from '@radix-ui/react-tabs';
 import '../App.css';
+import Exchange from './Exchange';
+import { TokenaizeNonFungibleAsset } from './TokenaizeNonFungibleAsset';
+import { TokenaizeAssset } from './TokenaizeAssset';
+import { Badge } from './Badge';
+import { SecureToken } from './SecureToken';
 
 const TabsSection = () => {
   return (
-    <Tabs defaultValue="tab1" className="TabsRoot" aria-label="Example Tabs">
+    <Tabs defaultValue="secureToken" className="TabsRoot" aria-label="Example Tabs">
       <TabsList className="TabsList">
-        <TabsTrigger value="tab1" className="TabsTrigger">
-            Tab 1
+        <TabsTrigger value="secureToken" className="TabsTrigger">
+            Secure Token
         </TabsTrigger>
-        <TabsTrigger value="tab2" className="TabsTrigger">
-            Tab 2
+        <TabsTrigger value="badge" className="TabsTrigger">
+            Badge's
         </TabsTrigger>
-        <TabsTrigger value="tab3" className="TabsTrigger">
-            Tab 3
+        <TabsTrigger value="createAsset" className="TabsTrigger">
+            Tokenaize fungible asset
+        </TabsTrigger>
+        <TabsTrigger value="createNonFungibleAsset" className="TabsTrigger">
+            Tokenaize asset
+        </TabsTrigger>
+        <TabsTrigger value="exchangeToken" className="TabsTrigger">
+            Exchange Token
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="tab1" className="TabsContent">
-        <p className="Text">Make changes to your account here. Click save when you're done.</p>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="name">
-            Name
-            </label>
-            <input className="Input" id="name" defaultValue="Pedro Duarte" />
-        </fieldset>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="username">
-            Username
-            </label>
-            <input className="Input" id="username" defaultValue="@peduarte" />
-        </fieldset>
-        <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-            <button className="Button green">Save changes</button>
-        </div>
+      <TabsContent value="secureToken" className="TabsContent">
+        <SecureToken />
       </TabsContent>
-      <TabsContent value="tab2" className="TabsContent">
-      <p className="Text">Make changes to your account here. Click save when you're done.</p>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="name">
-            Name
-            </label>
-            <input className="Input" id="name" defaultValue="Pedro Duarte" />
-        </fieldset>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="username">
-            Username
-            </label>
-            <input className="Input" id="username" defaultValue="@peduarte" />
-        </fieldset>
-        <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-            <button className="Button green">Save changes</button>
-        </div>
+      <TabsContent value="badge" className="TabsContent">
+        <Badge />
       </TabsContent>
-      <TabsContent value="tab3" className="TabsContent">
-      <p className="Text">Make changes to your account here. Click save when you're done.</p>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="name">
-            Name
-            </label>
-            <input className="Input" id="name" defaultValue="Pedro Duarte" />
-        </fieldset>
-        <fieldset className="Fieldset">
-            <label className="Label" htmlFor="username">
-            Username
-            </label>
-            <input className="Input" id="username" defaultValue="@peduarte" />
-        </fieldset>
-        <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-            <button className="Button green">Save changes</button>
-        </div>
+      <TabsContent value="createAsset" className="TabsContent">
+        <TokenaizeAssset />
+      </TabsContent>
+      <TabsContent value="createNonFungibleAsset" className="TabsContent">
+        <TokenaizeNonFungibleAsset />
+      </TabsContent>
+      <TabsContent value="exchangeToken" className="TabsContent">
+        <Exchange />
       </TabsContent>
     </Tabs>
   );
